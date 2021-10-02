@@ -1,0 +1,40 @@
+[uwsgi]
+wsgi-file = run.py
+callable = app
+socker = :8080
+processes = 4
+threads = 2
+master = true
+chmod.socker = 660
+vacuum = true
+die-on-term = true
+flask    | machine: x86_64
+flask    | clock source: unix
+flask    | pcre jit disabled
+flask    | detected number of CPU cores: 2
+flask    | current working directory: /app
+flask    | detected binary path: /usr/local/bin/uwsgi
+flask    | uWSGI running as root, you can use --uid/--gid/--chroot options
+flask    | *** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+flask    | your memory page size is 4096 bytes
+flask    | detected max file descriptor number: 1048576
+flask    | lock engine: pthread robust mutexes
+flask    | thunder lock: disabled (you can enable it with --thunder-lock)
+flask    | uWSGI running as root, you can use --uid/--gid/--chroot options
+flask    | *** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+flask    | Python version: 3.7.2 (default, Mar 27 2019, 08:41:08)  [GCC 6.3.0 20170516]
+flask    | Python main interpreter initialized at 0x561c18aaed10
+flask    | uWSGI running as root, you can use --uid/--gid/--chroot options
+flask    | *** WARNIN
+
+
+[uwsgi]
+wsgi-file = run.py
+callable = app
+socket = :8080
+processes = 4
+threads = 2
+master = true
+chmod-socket = 660
+vacuum = true
+die-on-term = truet
